@@ -4,14 +4,37 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "test": "vitest"
+    "dev-vite": "vite",
+    "build-vite": "tsc && vite build",
+    "preview-vite": "vite preview",
+    "test-vite": "vitest",
+    "build": "tsc",
+    "test-mocha": "mocha"
   },
   "devDependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.0.10",
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "ts-node": "^10.9.2",
     "typescript": "~5.9.3",
     "vite": "^7.2.4",
     "vitest": "^4.0.17"
+  },
+  "mocha": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "recursive": true,
+    "spec": [
+      "src/**/*.test.ts"
+    ],
+    "node-option": [
+      "import=./node-loader-esm.mjs"
+    ]
   }
 }
