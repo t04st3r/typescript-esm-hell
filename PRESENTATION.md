@@ -1,4 +1,4 @@
-# TypeScript ESM: Bundler vs Native Node
+# How to survive TypeScript ESM hell: Bundler vs Native Node approach
 
 ## Introduction
 
