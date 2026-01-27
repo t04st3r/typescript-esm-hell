@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { Example } from './example.ts'
+import { Example } from './example'
 
 describe('Example', () => {
   it('should initialize with the provided name', () => {
