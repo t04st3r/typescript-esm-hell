@@ -1,5 +1,4 @@
-import './style.css'
-import { Example } from './example.ts'
+import { Example } from './example.js'
 
 const example = new Example('Hello from Example class!')
 
